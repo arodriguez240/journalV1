@@ -6,7 +6,12 @@
 
 <p> <%= startingContent %> </p>
 
+<% for (count = 0; count < newpost.length; count++) { %>
 
+    <h1> <%= newpost[count].titles %> </h1>
+    <p> <%= newpost[count].entry %> </p>
+
+<% } %>
 
 
 

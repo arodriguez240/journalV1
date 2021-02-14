@@ -9,7 +9,7 @@
 <% for (count = 0; count < newpost.length; count++) { %>
 
     <h1> <%= newpost[count].titles %> </h1>
-    <p> <%= newpost[count].entry %> </p>
+    <p> <%= newpost[count].entry.toString().substring(1,100) + '...' %> <a href="/entries/<%= newpost[count].titles %>">Read More</a> </p>
 
 <% } %>
 
